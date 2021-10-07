@@ -1,6 +1,7 @@
-// ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
+// ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors, import_of_legacy_library_into_null_safe
 
 import 'package:flutter/material.dart';
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 import '../../constants.dart';
 
@@ -19,13 +20,25 @@ class _BottomNavState extends State<BottomNav> {
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
-      type: BottomNavigationBarType.fixed,
-      selectedItemColor: kAccentColor,
+      type: BottomNavigationBarType.shifting,
+      selectedItemColor: kTextColor,
       items: [
-        BottomNavigationBarItem(icon: Icon(Icons.ac_unit), label: 'Home'),
-        BottomNavigationBarItem(icon: Icon(Icons.ac_unit), label: 'Home'),
-        BottomNavigationBarItem(icon: Icon(Icons.ac_unit), label: 'Home'),
-        BottomNavigationBarItem(icon: Icon(Icons.ac_unit), label: 'Home'),
+        BottomNavigationBarItem(
+            icon: Icon(MdiIcons.home),
+            label: 'Home',
+            backgroundColor: kSecondaryColor),
+        BottomNavigationBarItem(
+            icon: Icon(MdiIcons.clipboard),
+            label: 'Lugares a visitar',
+            backgroundColor: kSecondaryColor),
+        BottomNavigationBarItem(
+            icon: Icon(MdiIcons.mapCheckOutline),
+            label: 'Mapas',
+            backgroundColor: kSecondaryColor),
+        BottomNavigationBarItem(
+            icon: Icon(MdiIcons.store),
+            label: 'Otras ciudades',
+            backgroundColor: kSecondaryColor),
       ],
       currentIndex: _currentIndex,
       onTap: (index) {

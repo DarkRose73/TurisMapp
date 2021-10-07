@@ -3,6 +3,8 @@
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:turismapp/constants.dart';
+import 'package:turismapp/screens/components/alertas.dart';
+import 'package:turismapp/screens/tab_lugares_screen.dart';
 import 'components/bottom_nav.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -22,10 +24,10 @@ class _HomeScreenState extends State<HomeScreen> {
           'TurisMapp',
         ),
       ),
-      body: Center(
-        child: Container(
-          child: Image(image: AssetImage('assets/images/valpo_logo.png')),
-        ),
+      body: Column(
+        children: [
+          AlertasList(),
+        ],
       ),
       bottomNavigationBar: BottomNav(),
     );
