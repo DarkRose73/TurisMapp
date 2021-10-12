@@ -24,8 +24,6 @@ class NoticiaCiudad extends StatelessWidget {
       width: size.width,
       decoration: BoxDecoration(
         color: Colors.purple,
-        // TODO: este borde puede ser agregado o no, ver esto
-        // border: Border.all(color: kSecondaryColor),
       ),
       child: Column(
         children: [
@@ -55,7 +53,7 @@ class NoticiaCiudad extends StatelessWidget {
               decoration: BoxDecoration(
                   image: DecorationImage(
                 fit: BoxFit.fill,
-                image: AssetImage('assets/images/noticias/' + imagen!),
+                image: AssetImage('assets/images/home_images/' + imagen!),
               )),
             ),
           ),

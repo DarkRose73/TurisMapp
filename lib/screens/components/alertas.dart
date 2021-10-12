@@ -27,30 +27,6 @@ class AlertasList extends StatelessWidget {
               texto: c['texto'],
             );
           }).toList(),
-          // NoticiaCiudad(
-          //   size: size,
-          //   ciudad: 'Valparaiso',
-          //   imagen: 'portales.jpg',
-          //   titulo: '¿Donde comprar los mariscos para semana santa?',
-          //   texto:
-          //       'Los mejores mariscos de valparaiso se encuentran en la caleta portales',
-          // ),
-          // NoticiaCiudad(
-          //   size: size,
-          //   ciudad: 'Valparaiso',
-          //   imagen: 'valpo_logo.png',
-          //   titulo: 'Venga a vivir la fiesta de los mil tambores',
-          //   texto:
-          //       'La fiesta de los mil tambores es una celebración típica realizada en Valparaiso ',
-          // ),
-          // NoticiaCiudad(
-          //   size: size,
-          //   ciudad: 'Viña del Mar',
-          //   imagen: 'jardin_botanico.jpg',
-          //   titulo: 'Sean todos bienvenidos nuevamente al jardin botánico',
-          //   texto:
-          //       'Jardín botánico de Viña del Mar re-abre sus puertas a los visitantes, con un costo de entrada de 2.000 pesos',
-          // ),
         ),
       ),
     );
