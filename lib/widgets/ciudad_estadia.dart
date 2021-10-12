@@ -21,27 +21,25 @@ class CiudadEstadia extends StatelessWidget {
       padding: EdgeInsets.all(10),
       width: double.infinity,
       height: 350,
-      child: Expanded(
-        child: Column(
-          children: [
-            Text(
-              nombre!,
-              style: TextStyle(fontSize: 40, color: kTextColor),
-            ),
-            Expanded(
-              child: ListView(
-                  scrollDirection: Axis.horizontal,
-                  children: listaLugaresEstadia!.map((e) {
-                    return LugaresEstadia(
-                      titulo: e['titulo'],
-                      imagen: e['imagen'],
-                      ubicacion: e['ubicacion'],
-                      precio: e['precio'],
-                    );
-                  }).toList()),
-            ),
-          ],
-        ),
+      child: Column(
+        children: [
+          Text(
+            nombre!,
+            style: TextStyle(fontSize: 40, color: kTextColor),
+          ),
+          Expanded(
+            child: ListView(
+                scrollDirection: Axis.horizontal,
+                children: listaLugaresEstadia!.map((e) {
+                  return LugaresEstadia(
+                    titulo: e['titulo'],
+                    imagen: e['imagen'],
+                    ubicacion: e['ubicacion'],
+                    precio: e['precio'],
+                  );
+                }).toList()),
+          ),
+        ],
       ),
     );
   }
