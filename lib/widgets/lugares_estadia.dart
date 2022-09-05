@@ -61,7 +61,7 @@ class LugaresEstadia extends StatelessWidget {
                     ubicacion!,
                     style: TextStyle(
                       color: Colors.white,
-                      fontSize: 12,
+                      fontSize: 16,
                       fontFamily: 'Raleway-Regular',
                     ),
                   ),

@@ -73,7 +73,7 @@ class NoticiaCiudad extends StatelessWidget {
                     color: kTextColor,
                     fontWeight: FontWeight.bold,
                     fontFamily: 'Raleway-Bold',
-                    fontSize: 18,
+                    fontSize: 16,
                   ),
                 ),
                 Spacer(),
@@ -82,6 +82,7 @@ class NoticiaCiudad extends StatelessWidget {
                   style: TextStyle(
                     color: kTextColor,
                     fontFamily: 'Raleway-Regular',
+                    fontSize: 12,
                   ),
                 )
               ],

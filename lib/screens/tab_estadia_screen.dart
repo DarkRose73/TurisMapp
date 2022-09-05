@@ -21,8 +21,20 @@ class TabEstadiaScreen extends StatelessWidget {
             listaLugaresEstadia: estadiaValpo,
           ),
           CiudadEstadia(
+            nombre: 'Viña del Mar',
+            listaLugaresEstadia: estadiaVina,
+          ),
+          CiudadEstadia(
             nombre: 'Con Con',
             listaLugaresEstadia: estadiaConCon,
+          ),
+          CiudadEstadia(
+            nombre: 'San Antonio',
+            listaLugaresEstadia: estadiaSanAntonio,
+          ),
+          CiudadEstadia(
+            nombre: 'Quilpué',
+            listaLugaresEstadia: estadiaQuilpue,
           ),
         ],
       ),
